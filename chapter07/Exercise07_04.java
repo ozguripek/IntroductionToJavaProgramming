@@ -30,12 +30,9 @@ public class Exercise07_04 {
 		for (int i = 0; i < dizi.length; i++) {
 		 
 			toplam+=(dizi[i]*sayac[i]);
-			System.out.println(toplam);	 
-			 
-		
 		}
 			ort= toplam/sayar;
-		 System.out.println(ort);
+		 
 		 
 		for(int i=0; i<sayac.length;i++) {
 			
