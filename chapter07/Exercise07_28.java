@@ -16,8 +16,9 @@ public class Exercise07_28 {
 			
 		for( int i=0; i<dizi.length; i++) {
 			for ( int j=0; j<dizi.length;j++) {
-				if (i != j)
+				if (i != j) {
 				System.out.println(dizi[i]+""+dizi[j]);
+				}
 			}
 			
 		}
