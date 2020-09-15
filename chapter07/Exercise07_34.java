@@ -11,7 +11,8 @@ public class Exercise07_34 {
 			String ifade= input.nextLine();
 			System.out.print(sort(ifade));
 
-	}
+		}
+		
 		public static char[] sort(String s) {
 			char[] dizi= s.toCharArray();
 			sirala(dizi);
@@ -35,7 +36,7 @@ public class Exercise07_34 {
 					list[minIndex] = list[i];
 					list[i] =  min;
 				}
-				// System.out.print(list[i]);
+				
 			}
 			
 		}
