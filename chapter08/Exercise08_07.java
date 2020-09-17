@@ -15,22 +15,22 @@ public class Exercise08_07 {
 		
 		int p1 = 0, p2 = 1, p3 = 2; 
 		double shortestDistance =  distance(points[0][0], points[0][1], points[0][2],
-				points[1][0], points[1][1], points[1][2]);
+				                            points[1][0], points[1][1], points[1][2]);
 		
 		for (int i = 0; i < points.length-1; i++) {
 			for (int j = i + 1; j < points.length; j++) {
 				double distance = distance(points[i][0], points[i][1], points[i][2],
-					points[j][0], points[j][1], points[j][2]); // Find distance
+					                       points[j][0], points[j][1], points[j][2]); 
 
 				if (shortestDistance > distance) {
-					p1 = i; // Update p1
-					p2 = j; // Update p2
-					shortestDistance = distance; // Update shortestDistance
+					p1 = i; 
+					p2 = j; 
+					shortestDistance = distance; 
 				}
 			}
 		}
 
-		// Display result
+		
 		System.out.println("The closest two points are " +
 			"(" + points[p1][0] + ", " + points[p1][1] + ","+ points[p1][2]+") and ("
 				+ points[p2][0] + ", " + points[p2][1] +", "+ points[p2][2]+")");
