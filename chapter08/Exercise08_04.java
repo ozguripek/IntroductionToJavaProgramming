@@ -27,8 +27,6 @@ public class Exercise08_04 {
 		}
 
 		
-
-	
 		sirala(kisiBasiTopCalismaCiz);
 
 		
