@@ -10,19 +10,27 @@ public class Exercise07_05 {
 		int sayar=0;
 		System.out.print("Enter ten numbers: ");
 		Scanner input = new Scanner(System.in);
-		int sayi = 0 ; 
-				
+						
 		for (int i = 0; i < dizi.length; i++) {
-			sayi = input.nextInt();
-			if (dizi[sayi-1]==0) {						
-			dizi[sayi-1]=sayi;
-			
+		
+			int sayi=input.nextInt();
+			if(kontrol(dizi, sayi)) {
+			dizi[i]=sayi;	
 			sayar++;
 			}
+		
 		}
 		
 		yazdir(dizi, sayar)	;
 	}
+		private static boolean kontrol(int[] dizi, int sayi) {
+			for(int i = 0; i <dizi.length; i++) {
+				if (dizi[i]==sayi) {
+					return false;
+				}
+			}
+			return true;
+		}
 		public static void yazdir(int[] dizi, int sayar) {	
 			
 			System.out.println(	"The number of distinct number is:" + sayar);
