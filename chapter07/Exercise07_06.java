@@ -24,7 +24,7 @@ public class Exercise07_06 {
 				if(asalMi==true) {
 					asalSayiSayaci++;
 					asal[asalSayiSayaci-1]=sayi;
-					//System.out.println(asalSayiSayaci+". asal sayi "+asal[asalSayiSayaci-1]);
+					System.out.println(asalSayiSayaci+". asal sayi "+asal[asalSayiSayaci-1]);
 				}
 				sayi++;	
 			}
@@ -33,16 +33,18 @@ public class Exercise07_06 {
 		boolean asalMi = true;
 		for(int i=0; i< asal.length;i++){
 		
-			if((asal[i]<= Math.pow(rakam, 0.5)) && rakam % asal[i]==0 ) {
+			if((asal[i]<= Math.sqrt(rakam)) && (rakam % asal[i]==0) ) {
 			asalMi = false;
-			System.out.println(rakam+" asal sayi degil ");
 			break;
-				
-			}else { 
-				System.out.println(rakam+" asal sayi ");
-				break;
 			}
 		}
+			if(!asalMi) {
+			System.out.println(rakam+" asal sayi degil ");
+			}
+		else { 
+				System.out.println(rakam+" asal sayi ");
+		}
+		
 	}
 }
 	
