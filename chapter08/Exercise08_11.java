@@ -30,22 +30,20 @@ public class Exercise08_11 {
 	 }
 	private static void yazdir(int[] dizi) {
 		String [][]matrix= new String[3][3];
-		for(int d = 0;d <dizi.length;d++){
-		       System.out.print(dizi[d]);
-		}  
+		 
 			for(int j=0; j< 3; j++) {
 				for(int k=0; k< 3; k++) {
 					for(int i=0; i< dizi.length-1;  i++) {
 					if(dizi[i]==0)  {
 						matrix[j][k]="H";	
 					}
-					//else {
-					//	matrix[j][k]="T";
-					//}
+					else {
+						matrix[j][k]="T";
+					}
 				}
 			}
 		}
-		//System.out.println(matrix[0][0]);
+		
 		for(int i=0; i< 3; i++) {
 			for(int j=0; j< 3; j++) {
 				System.out.print(matrix[i][j]);
