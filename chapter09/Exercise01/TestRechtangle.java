@@ -3,6 +3,7 @@ package chapter09.Exercise01;
 public class TestRechtangle {
 
 	public static void main(String[] args) {
+		
 		Rechtangle rechtangle1= new Rechtangle(4,40);
 		Rechtangle rechtangle2= new Rechtangle(3.5, 35.9);
 		
