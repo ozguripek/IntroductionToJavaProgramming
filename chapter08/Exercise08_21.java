@@ -32,14 +32,9 @@ public class Exercise08_21 {
 		    System.out.println("The central city is at (" + cities[index][0] + ", " 
 		    											  + cities[index][1] + ")");
 		    
-		    		//+ getLocString(cities[index]));
 		    System.out.println("The total distance to all other cities is " +
 		      shortestTotalDistance);
 	}
-
-	/* public static String getLocString(double[] loc) {
-		    return "(" + loc[0] + ", " + loc[1] + ")";
-	}*/
 
 	public static double distance(double x1, double y1, double x2, double y2) {
 		    return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
