@@ -20,8 +20,7 @@ public class Exercise08_23 {
 		if (row < 0 || column < 0)
 			System.out.println("No cell has been flipped");
 		else {
-			System.out.println(
-				"The flipped cell is at (" + row + ", " + column + ")");
+			System.out.println("The flipped cell is at (" + row + ", " + column + ")");
 		}
 	}
 
