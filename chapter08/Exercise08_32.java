@@ -22,7 +22,6 @@ public class Exercise08_32 {
 					getTriangleArea(points));
 	}
 
-	/** getTriangleArea returns the area of a triangle */
 	public static double getTriangleArea(double[][] points) {
 		double[] side = new double[3]; 
 
@@ -35,7 +34,9 @@ public class Exercise08_32 {
 		side[2] = Math.sqrt(Math.pow(points[0][0] - points[2][0], 2) + 
 				            Math.pow(points[0][1] - points[2][1], 2));
 
-		
+		if((points[1][0] - points[0][0]) * (points[2][1] - points[0][1]) - (points[2][0] - points[0][0]) * (points[1][1] - points[0][1])==0) {
+			return 0;
+			}
 		double s = (side[0]+ side[1]+ side[2])/2;;
 		double area = Math.pow(s * (s - side[0]) * (s - side[1]) * (s - side[2]), 0.5);
 		System.out.println(area);
