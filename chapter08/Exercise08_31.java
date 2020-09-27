@@ -9,7 +9,7 @@ public class Exercise08_31 {
 
 		double[][] points = new double[4][2]; 
 
-		System.out.println("Enter four points:");
+		System.out.println("Enter (x,y) for  four points:");
 		for (int i = 0; i < points.length; i++) {
 			for (int j = 0; j < points[i].length; j++) {
 				points[i][j] = input.nextDouble();
