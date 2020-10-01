@@ -11,7 +11,7 @@ public class BMITest {
 		System.out.println("The BMI for " + bmi2.getName() + " is "
 			+ bmi2.getBMI() + " " + bmi2.getStatus());
 		
-		BMI bmi3= new BMI ("Mustafa", 20, 87, 50);
+		BMI bmi3= new BMI ("", 20, 87, 50);
 		System.out.println("The BMI for " + bmi3.getName() + " is "
 				+ bmi3.getBMI() + " " + bmi3.getStatus());
 
