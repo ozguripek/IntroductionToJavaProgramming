@@ -14,6 +14,7 @@ public class TestQueu {
 			System.out.print(queue1.getElements()[i-1]+ " ");
 		}
 		System.out.println("\n**************************************************");
+		
 		// Removes these numbers and displays them
 		while (!queue1.empty()) {
 			System.out.print(queue1.dequeue() + " ");
