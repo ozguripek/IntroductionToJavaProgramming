@@ -19,7 +19,7 @@ public class StackTest {
 	}
 
 	public static void smallestFactors(int number, StackOfIntegers stackOfInteger) {
-		int i = 2; // Potential prime factor
+		int i = 2;
 		while (number / i != 1){ //sayinin kendisi olmadigi müddetce
 			if (number % i == 0) {
 				stackOfInteger.push(i);//Stores an integer into the top of the stack.
