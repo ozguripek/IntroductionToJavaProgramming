@@ -23,7 +23,7 @@ public class TestAccount {
 					}
 				} while (choice != 4); 
 			}
-			// Once you exit, the system will prompt for an id again
+			
 		} while (true); 
 	}
 
