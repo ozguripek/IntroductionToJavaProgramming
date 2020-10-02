@@ -15,9 +15,8 @@ public class TestCourse {
 		java.dropStudent("Özgür");
 		print(java);
 		java.dropStudent("Ahmet");
-		print(java);
+		print(java);		
 		
-		print(java);
 	}
 
 	private static void print(Course java) {

@@ -29,20 +29,21 @@ public class Course {
 			}
 		}
 		if(index==-1) {
-				System.out.println(student + " is not in the course: " + courseName);
+			System.out.println(student + " is not in the course: " + courseName);
 		}
 		else {
-		String[] temp = new String[students.length - 1];
-		for (int i = 0, j = 0; i < temp.length; i++, j++) {
-			if (i == index) {
-				j++;
+			String[] temp = new String[students.length - 1];
+			for (int i = 0, j = 0; i < temp.length; i++, j++) {
+				if (i == index) {
+					j++;
+				}
+				temp[i] = students[j];
 			}
-			temp[i] = students[j];
-		}
-		this.students = temp;
-		numberOfStudents--;	
+			this.students = temp;
+			numberOfStudents--;	
 		}	
 	}	
+	
 	public void clear() {
 		students = new String[1];
 		numberOfStudents = 0;
