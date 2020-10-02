@@ -3,7 +3,7 @@ package chapter10.Exercise11;
 public class TestCircle {
 
 	public static void main(String[] args) {
-		// Create a Circle2D object
+		
 		Circle2D c1 = new Circle2D(2, 2, 5.5);		
 		System.out.println("Circle1 area: " + c1.getArea()); 
 		System.out.println("Circle1 perimeter: " + c1.getPerimeter());	
