@@ -21,13 +21,15 @@ public class MyRectangle2D {
 	}
 
 	public static MyRectangle2D getRectangle(double[][] points) {
+		double[] minAndMaxValuesForX=new double[2];
+		double[] minAndMaxValuesForY=new double[2];
 		final int COLUMN_X = 0;
-		final int COLUMN_Y = 1;
-		double[] minAndMaxValuesForX = findMinAndMaxValues(points, COLUMN_X);
-		double[] minAndMaxValuesForY = findMinAndMaxValues(points, COLUMN_Y);
-		double x = (minAndMaxValuesForX[1] + minAndMaxValuesForX[0]) / 2;
-		double y = (minAndMaxValuesForY[1] + minAndMaxValuesForY[0]) / 2;
-		double width = Math.sqrt(Math.pow(minAndMaxValuesForX[1] - minAndMaxValuesForX[0], 2));		
+		final int COLUMN_Y = 1;		
+		minAndMaxValuesForX = findMinAndMaxValues(points, COLUMN_X);
+		minAndMaxValuesForY = findMinAndMaxValues(points, COLUMN_Y);
+		double x = (minAndMaxValuesForX[0] + minAndMaxValuesForX[1]) / 2;
+		double y = (minAndMaxValuesForY[0] + minAndMaxValuesForY[1]) / 2;
+		double width  = Math.sqrt(Math.pow(minAndMaxValuesForX[1] - minAndMaxValuesForX[0], 2));		
 		double height = Math.sqrt(Math.pow(minAndMaxValuesForY[1] - minAndMaxValuesForY[0], 2));;
 		
 		return new MyRectangle2D(x, y, width, height);
