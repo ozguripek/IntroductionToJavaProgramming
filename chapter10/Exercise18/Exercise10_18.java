@@ -19,14 +19,13 @@ public class Exercise10_18 {
 			}
 		}
 
-		public static boolean isPrime(BigInteger n) {
-			for (BigInteger i = new BigInteger("2"); i.compareTo(n.divide(new BigInteger("2"))) <= 0; 
-				  i = i.add(new BigInteger("1"))) {
-				if (n.remainder(i).compareTo(new BigInteger("0")) == 0) {
+	public static boolean isPrime(BigInteger n) {
+		for (BigInteger i = new BigInteger("2"); i.compareTo(n.divide(new BigInteger("2"))) <= 0; i = i.add(new BigInteger("1"))) {
+			if (n.remainder(i).compareTo(new BigInteger("0")) == 0) {
 					return false;
-				}
 			}
-			return true;
 		}
+		return true;
+	}
 
 }
