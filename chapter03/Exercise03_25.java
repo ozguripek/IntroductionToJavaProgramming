@@ -26,9 +26,10 @@ public class Exercise03_25 {
 				// Get a, b, c, d, e, f
 				double a = y1 - y2;
 				double b = -1 * (x1 - x2);
-				double c = y3 - y4;
-				double d = -1 * (x3 - x4);
 				double e = (y1 - y2) * x1 - (x1 - x2) * y1;
+				
+				double c = y3 - y4;
+				double d = -1 * (x3 - x4);				
 				double f = (y3 - y4) * x3 - (x3 - x4) * y3;
 
 				// Display results
