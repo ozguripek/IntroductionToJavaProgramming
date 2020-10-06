@@ -16,7 +16,7 @@ public class ListAdd {
 				list.add(isim.substring(1));
 			}			
 			else if(isim.startsWith("-")) {
-				list.remove(isim);
+				list.remove(isim.substring(1));
 			}else {
 				continue;
 			}
