@@ -20,12 +20,11 @@ public class TestMyString2 {
 		print(MyString2.valueOf(true)); 
 	}
 
-	/** Display a MyString2 object */
+	
 	public static void print(MyString2 str) {
 		print(str.toChars());
 	}
 
-	/** Display an array of characters */
 	public static void print(char[] chars) {
 		for (int i = 0; i < chars.length; i++) {
 			System.out.print(chars[i]);
