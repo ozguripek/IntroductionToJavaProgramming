@@ -15,19 +15,17 @@ public class Exercise10_20 {
 		}
 	}
 
-	@SuppressWarnings("deprecation")
 	public static BigDecimal getE(BigDecimal v) {
 		BigDecimal one = new BigDecimal("1");
 		BigDecimal e = new BigDecimal("0.0");
 		for (BigDecimal i = one; i.compareTo(v) <= 0; i = i.add(one)) {
-			BigDecimal denominator = i;
-			for (BigDecimal k = i.subtract(one); 
-				k.compareTo(one) >= 1; 
-				k = k.subtract(one)) {
-				denominator = denominator.multiply(k);
+			BigDecimal payda = i;
+			
+			for (BigDecimal j = i.subtract(one); j.compareTo(one) >= 1; j = j.subtract(one)) {
+				payda = payda.multiply(j);
 			}
-			// Use 25 digits of precision
-			e = e.add(one.divide(denominator, 25, RoundingMode.HALF_UP));  
+			
+			e = e.add(one.divide(payda, 25, RoundingMode.HALF_UP));  
 		}
 		return e;
 	}
