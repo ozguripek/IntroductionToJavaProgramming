@@ -16,9 +16,9 @@ public class Exercise11_09 {
 		printArray(array);
 
 		System.out.print("The largest row index: ");
-		printArayList(largestRow(array));
+		printArrayList(largestRow(array));
 		System.out.print("The largest column index: ");
-		printArayList(largestColumn(array));
+		printArrayList(largestColumn(array));
 	}
 	
 	public static void randomlyFill(int[][] array) {
@@ -39,26 +39,13 @@ public class Exercise11_09 {
 		}
 	}
 	
-	public static void printArayList(ArrayList<Integer> list) {
+	public static void printArrayList(ArrayList<Integer> list) {
 		for (int i = 0; i < list.size(); i++) {
 			System.out.print(list.get(i) + " ");
 		}
 		System.out.println();
 	}
 		
-	/*public static ArrayList<Integer> largestRow(int[][] array) {
-		ArrayList<Integer> indexesOfMaxValues = new ArrayList<>();
-		int[] counter = new int[array.length];
-		for (int row = 0; row < array.length; row++) {
-			for (int col = 0; col < array[row].length; col++) {
-				if (array[row][col] == 1)
-					counter[row]++;
-			}
-		}
-		int maxValue = max(counter);
-		getIndex(indexesOfMaxValues, counter, maxValue);
-		return indexesOfMaxValues;
-	} */
 	public static ArrayList<Integer> largestRow(int[][] array) {
 		ArrayList<Integer> indexesOfMaxValues = new ArrayList<>();
 		int maxCounter = 0;
@@ -97,22 +84,5 @@ public class Exercise11_09 {
 			}			
 		}		
 		return indexesOfMaxValues;
-	}
-
-	/*public static int max(int[] array) {
-		int max = array[0];
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] > max)
-				max = array[i];
-		}
-		return max;
-	}*/
-
-	/*public static void getIndex(ArrayList<Integer> list, int[] count, int maxValue) {
-		for (int i = 0; i < count.length; i++) {
-			if (count[i] == maxValue)
-				list.add(i);
-		}
-	}*/
-	
+	}	
 }
