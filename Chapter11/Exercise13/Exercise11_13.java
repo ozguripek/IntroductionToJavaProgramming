@@ -18,8 +18,7 @@ public class Exercise11_13 {
 		removeDuplicate(list);
 		for(int i=0;i<list.size();i++) {
 			System.out.println(list.get(i)+" ");
-		}
-		//System.out.println();
+		}		
 	}
 	
 	public static void removeDuplicate(ArrayList<Integer> list) {
