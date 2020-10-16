@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Exercise12_02 {
 
-	public static void main(String[] args) throws InputMismatchException {
+	public static void main(String[] args) {
 		while (true) {
 			try {
 			Scanner input = new Scanner(System.in);
