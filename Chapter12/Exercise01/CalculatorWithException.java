@@ -48,7 +48,7 @@ public class CalculatorWithException {
 							  break;
 			}	
 
-			// Display result
+			
 			System.out.println(array[0] + ' ' + array[1] + ' ' + array[2]
 				+ " = " + result);
 		
