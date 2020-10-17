@@ -19,14 +19,13 @@ public class Exercise12_12 {
             System.out.println(filename + " does not exist.");
             System.exit(2);
         }
-/* StringBuilder, System.Text isim uzayı altında yer alan ve temel olarak metinsel 
- * ifadeleri birleştirmek için kullanılan bir sınıftır. String sınıfıyla yapılan 
- * metin birleştirme işlemleri StringBuilder sınıfıyla da yapılabilmekte ve bu 
- * noktada StringBuilder sınıfının String sınıfına göre ciddi bir performans 
- * üstünlüğü bulunmaktadır. Çünkü String objesi değişmeyen (immutable) bir nesnedir
- *  ve '+' ile yeni bir karakter katarı (string) eklendiğinde her defasında yeni 
- *  bir String nesnesi yaratılmaktadır. StringBuilder nesnesi ise bir kez yaratılır
- *  ve daha sonra yeni veriler bu nesneye eklenir.*/
+/* StringBuilder temel olarak metinsel ifadeleri birleştirmek için kullanılan bir 
+ * sınıftır. String sınıfıyla yapılan metin birleştirme işlemleri StringBuilder 
+ * sınıfıyla da yapılabilmekte ve bu noktada StringBuilder sınıfının String sınıfına
+ * göre ciddi bir performans üstünlüğü bulunmaktadır. Çünkü String objesi değişmeyen 
+ * (immutable) bir nesnedir ve '+' ile yeni bir karakter katarı (string) eklendiğinde 
+ * her defasında yeni bir String nesnesi yaratılmaktadır. StringBuilder nesnesi ise 
+ * bir kez yaratılır ve daha sonra yeni veriler bu nesneye eklenir.*/
         StringBuilder sbldr = new StringBuilder();
         try {
             Scanner input = new Scanner(filename);
@@ -55,16 +54,5 @@ public class Exercise12_12 {
         }
         System.out.println(sbldr);
     }
-
-    public static int getIndex(String s, char ch) {
-
-        for (int i = 0; i < s.length(); i++) {
-            if (ch == s.charAt(i)) {
-                return i;
-            }
-        }
-        return -1;
-
-	}
-
+   
 }
