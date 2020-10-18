@@ -7,7 +7,7 @@ public class Exercise12_15 {
 
 	public static void main(String[] args) throws Exception {
 		
-		File file = new File("Exercise12_151.txt");
+		File file = new File("Exercise12_15.txt");
 		if (file.exists()) {
 			System.out.println("File already exists");
 			System.exit(0);
@@ -17,7 +17,7 @@ public class Exercise12_15 {
 			PrintWriter output = new PrintWriter(file);
 		) {
 			for (int i = 0; i < 100; i++) {
-				output.print(((int)(Math.random() * 1000)));
+				output.print(((int)(Math.random() * 100)));
 				output.print(" ");
 			}
 		}
