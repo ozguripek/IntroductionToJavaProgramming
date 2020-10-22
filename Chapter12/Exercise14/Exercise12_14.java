@@ -26,11 +26,10 @@ public class Exercise12_14 {
 				count++;
 			}
 		}
-			catch (FileNotFoundException ex) {
-
-	            System.out.println("Error reading " + file);
-	            ex.printStackTrace();
-	        }
+		catch (FileNotFoundException ex) {
+	          System.out.println("Error reading " + file);
+	          ex.printStackTrace();
+	     }
 				
 		System.out.println("File " + file.getName());
 		System.out.println("Total scores: " + total);
