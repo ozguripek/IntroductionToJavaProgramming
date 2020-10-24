@@ -1,4 +1,4 @@
-package chapter13.Exercise10;
+package chapter13.Exercise12;
 
 public class Rectangle extends GeometricObject implements Comparable<Rectangle>  {
 	
@@ -64,5 +64,4 @@ public class Rectangle extends GeometricObject implements Comparable<Rectangle> 
 				+ "\nArea: " + getArea() + "\nPerimeter: " + getPerimeter();
 	  }	  
 }
-
 
